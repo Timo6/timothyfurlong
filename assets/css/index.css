@@ -4,13 +4,25 @@
 	}
 
 	#social_icons {
-		width: 400px;
-		height: 36px;
-		padding: 100px 108px 0px 112px;
+		width: calc(44.4px * 8); /* width of icon * number of icons */
+ 		height: 36px;
+		padding-top: 100px;
+		padding-left: calc((620px - (44.4px * 8)) / 2); /* see below */
+		padding-right: calc((620px - (44.4px * 8)) / 2);
 	}
 
-	#social_icons * {
-		margin-right: 4px;
+	/*
+		|---------------| 	a: content width = 620px
+		|--------|			b: social_icons width = icon width * number of icons
+		         |------|	c: a - b
+		To center:
+		|---|-------|---|	d: c/2 +/- 2
+	*/
+
+
+	.icon {
+		margin-left: 2px;
+		margin-right: 2px;
 		display: block;
 		float: left;
 		font-size: 16px;
