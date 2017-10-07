@@ -19,8 +19,7 @@
 		|---|-------|---|	d: c/2 +/- 2
 	*/
 
-
-	.icon {
+	#social_icons .icons {
 		margin-left: 2px;
 		margin-right: 2px;
 		display: block;
