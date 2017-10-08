@@ -4,11 +4,11 @@
 
 @media screen and (min-width: 660px) {
 	#social_icons {
-		width: calc(44.4px * 8); /* width of icon * number of icons */
- 		height: 36px;
+		width: calc(42.4px * 8); /* width of icon * number of icons */
+ 		height: 34.4px;
 		padding-top: 100px;
-		padding-left: calc((620px - (44.4px * 8)) / 2); /* see below */
-		padding-right: calc((620px - (44.4px * 8)) / 2);
+		padding-left: calc((620px - (42.4px * 8)) / 2); /* see below */
+		padding-right: calc((620px - (42.4px * 8)) / 2);
 	}
 
 	/*
@@ -20,8 +20,7 @@
 	*/
 
 	#social_icons .icons {
-		margin-left: 2px;
-		margin-right: 2px;
+		margin: 0px 2px;
 		display: block;
 		float: left;
 		font-size: 16px;
@@ -30,11 +29,11 @@
 
 @media screen and (min-width: 320px) and (max-width:659px) {
 	#social_icons {
-		width: calc(78px * 3);
-		height: 300px;
+		width: calc(76px * 3);
+		height: calc(69.75px *3);
 		padding-top: 30px;
-		padding-left: calc((320px - (78px * 3)) / 2);
-		padding-right: calc((320px - (78px * 3)) / 2);
+		padding-left: calc((320px - (76px * 3)) / 2);
+		padding-right: calc((320px - (76px * 3)) / 2);
 	}
 
 	#social_icons .icons {
@@ -44,11 +43,11 @@
 
 	/* Bottom row only has two icons */
 	#social_icons .steam {
-		margin-left: 47px;
+		margin-left: 46px;
 	}
 
 	#social_icons .linkedin {
-		margin-right: 47px;
+		margin-right: 46px;
 	}
 }
 
