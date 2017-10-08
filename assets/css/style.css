@@ -64,6 +64,36 @@ html {
 	display: block;
 }
 
+.mobiledropcontent {
+	display: none;
+	background-color: #f1f1f1;
+	font-size: 20px;
+}
+
+.mobiledropcontent ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.mobiledropcontent a {
+	color: black;
+	text-decoration: none;
+	padding: 8px;
+}
+
+.mobiledropcontent a:hover {
+	background-color: #f9f9f9;
+}
+
+.dropdown:hover ~ .mobiledropcontent {
+	display: block;
+}
+
+.mobiledropcontent:hover {
+	display: block;
+}
+
 #footer {
 	width: 100%;
 	position: absolute;
@@ -137,6 +167,10 @@ html {
 		width: 270px;
 	}
 
+	.dropdown:hover ~ .mobiledropcontent {
+		display: none;
+	}
+
 	#emaildrop .dropcontent {
 		left: 2px;
 	}
@@ -204,6 +238,10 @@ html {
 
 	#light {
 		margin-top: -35px;
+	}
+
+	.dropdown:hover .dropcontent {
+		display: none;
 	}
 
 	#emaildrop {
