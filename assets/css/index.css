@@ -1,8 +1,8 @@
-@media screen and (min-width: 660px) {
-	#content {
-		padding: 0;
-	}
+#content {
+	padding: 0;
+}
 
+@media screen and (min-width: 660px) {
 	#social_icons {
 		width: calc(44.4px * 8); /* width of icon * number of icons */
  		height: 36px;
@@ -29,21 +29,30 @@
 }
 
 @media screen and (min-width: 320px) and (max-width:659px) {
-	#content {
-		padding: 0;
+	#social_icons {
+		width: calc(78px * 3);
+		height: 300px;
+		padding-top: 30px;
+		padding-left: calc((320px - (78px * 3)) / 2);
+		padding-right: calc((320px - (78px * 3)) / 2);
 	}
 
-	#social_icons * {
-		margin: 6px 0px 5px 33.5px;
+	#social_icons .icons {
 		font-size: 25px;
+		margin: 8px;
+	}
+
+	/* Bottom row only has two icons */
+	#social_icons .steam {
+		margin-left: 47px;
+	}
+
+	#social_icons .linkedin {
+		margin-right: 47px;
 	}
 }
 
 @media screen and (max-width: 319px) {
-	#content {
-		padding: 0;
-	}
-
 	#social_icons * {
 		margin: 6px 0px 5px 33.5px;
 		font-size: 25px;

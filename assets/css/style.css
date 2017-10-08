@@ -1,19 +1,101 @@
+html {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(250, 250, 250);
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 100%;
+	color: rgb(0, 0, 0);
+}
+
+#header * {
+	text-transform: lowercase;
+	color: rgb(0, 0, 0);
+}
+
+#bold {
+	font-family: HelveticaNeue-Bold, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 700;
+}
+
+#light {
+	font-family: HelveticaNeue-Light, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 300;
+}
+
+#content {
+	padding: 0px 10px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.dropcontent {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 110px;
+	top: 100%;
+	font-size: 14px;
+}
+
+.dropcontent ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dropcontent a {
+	color: black;
+	text-decoration: none;
+	padding: 4px 8px;
+	display: block;
+}
+
+.dropcontent a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropcontent {
+	display: block;
+}
+
+#footer {
+	width: 100%;
+	position: absolute;
+}
+
+.footer_text {
+	color: rgb(145, 145, 145);
+	font-size: 9px;
+}
+
+.footer_link {
+	color: rgb(121, 121, 121)
+}
+
+#copyright {
+	padding: 10px 10px 0 10px;
+}
+
+#social_ack {
+	padding: 0 10px 10px 10px;
+}
+
 @media screen and (min-width: 660px) {
 	html {
 		min-width: 660px;
 		min-height: 704px;
-		width: 100%;
-		height: 100%;
-		background-color: rgb(240, 240, 240);
 		background-image: url(../images/noise.png), -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
 		background-image: url(../images/noise.png), -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
 		background-image: url(../images/noise.png), -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
 		background-image: url(../images/noise.png), -ms-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
 		background-image: url(../images/noise.png), linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
 		background-attachment: fixed;
-		font-family: "Helvetica Neue", Arial, sans-serif;
-		font-size: 100%;
-		color: rgb(0, 0, 0);
 	}
 
 	body {
@@ -45,80 +127,25 @@
 	#header * {
 		height: 113px;
 		float: left;
-		text-transform: lowercase;
-		color: rgb(0, 0, 0);
 	}
 
 	#bold {
 		width: 330px;
-		font-family: HelveticaNeue-Bold, "Helvetica Neue", Arial, sans-serif;
-		font-weight: 700;
 	}
 
 	#light {
 		width: 270px;
-		font-family: HelveticaNeue-Light, "Helvetica Neue", Arial, sans-serif;
-		font-weight: 300;
 	}
 
-	#content {
-		padding: 0px 10px;
-	}
-
-	.dropdown {
-		position: relative;
-		display: inline-block;
-		float: left;
-	}
-
-	.dropcontent {
-		display: none;
-		position: absolute;
-		z-index: 1;
-		background-color: #f9f9f9;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		min-width: 110px;
-		top: 100%;
-		font-size: 14px;
-	}
-
-	.dropcontent ul {
-		list-style: none;
-		padding: 0px;
-		margin: 0px;
-	}
-
-	.dropcontent a {
-		color: black;
-		text-decoration: none;
-		padding: 4px 8px;
-		display: block;
-	}
-
-	.dropcontent a:hover {
-		background-color: #f1f1f1;
-	}
-
-	.dropdown:hover .dropcontent {
-		display: block;
+	#emaildrop .dropcontent {
+		left: 2px;
 	}
 
 	#footer {
-		width: 100%;
-		position: absolute;
 		bottom: 0px;
 	}
 
-	.footer_text {
-		color: rgb(145, 145, 145);
-		font-size: 9px;
-	}
-
-	.footer_link {
-		color: rgb(121, 121, 121)
-	}
-
-	#social_icons_footer {
+/*	#social_icons_footer {
 		float: right;
 		padding-top: 10px
 	}
@@ -127,16 +154,14 @@
 		margin-right: 4px;
 		float: left;
 		font-size: 10px;
-	}
+	}*/
 
 	#copyright {
 		width: 300px;
-		padding: 10px 10px 0px 10px;
 	}
 
 	#social_ack {
 		width: 300px;
-		padding: 0px 10px 10px 10px;
 	}
 }
 
@@ -144,12 +169,6 @@
 	html {
 		min-width: 320px;
 		min-height: 356px;
-		width: 100%;
-		height: 100%;
-		background-color: rgb(250, 250, 250);
-		font-family: "Helvetica Neue", Arial, sans-serif;
-		font-size: 100%;
-		color: rgb(0, 0, 0);
 	}
 
 	body {
@@ -166,7 +185,7 @@
 	}
 
 	#page * {
-		width: 320px;
+		width: 100%;
 		float: left;
 	}
 
@@ -176,43 +195,31 @@
 
 	#header * {
 		font-size: 80px;
-		text-transform: lowercase;
 		text-align: center;
-		color: rgb(0, 0, 0);
 	}
 
 	#bold {
 		margin-top: -10px;
-		font-family: HelveticaNeue-Bold, "Helvetica Neue", Arial, sans-serif;
-		font-weight: 700;
 	}
 
 	#light {
 		margin-top: -35px;
-		font-family: HelveticaNeue-Light, "Helvetica Neue", Arial, sans-serif;
-		font-weight: 300;
 	}
 
-	#content {
-		padding: 0px 10px;
+	#emaildrop {
+		width: initial;
+	}
+
+	#emaildrop .dropcontent {
+		top: calc(100% - 4px);
+		left: 8px;
 	}
 
 	#footer {
-		position: absolute;
 		top: 100%;
-		width: 100%;
 	}
 
-	.footer_text {
-		color: rgb(145, 145, 145);
-		font-size: 9px;
-	}
-
-	.footer_link {
-		color: rgb(121, 121, 121)
-	}
-
-	#social_icons_footer {
+/*	#social_icons_footer {
 		padding: 10px 25px 0 29px;
 		width: 270px;
 	}
@@ -220,15 +227,7 @@
 	#social_icons_footer * {
 		margin-right: 4px;
 		font-size: 10px;
-	}
-
-	#copyright {
-		padding: 10px 10px 0 10px;
-	}
-
-	#social_ack {
-		padding: 0 10px 10px 10px;
-	}
+	}*/
 
 	#social_ack * {
 		float: none;
@@ -237,12 +236,7 @@
 
 @media screen and (max-width: 319px) {
 	html {
-		width: 100%;
-		height: 100%;
 		background-color: pink;
-		font-family: "Helvetica Neue", Arial, sans-serif;
-		font-size: 100%;
-		color: rgb(0, 0, 0);
 	}
 
 	body {
@@ -269,44 +263,19 @@
 
 	#header * {
 		font-size: 80px;
-		text-transform: lowercase;
 		text-align: center;
 	}
 
 	#bold {
 		margin-top: -10px;
-		font-family: HelveticaNeue-Bold, "Helvetica Neue", Arial, sans-serif;
-		font-weight: 700;
 	}
 
 	#light {
 		margin-top: -35px;
-		font-family: HelveticaNeue-Light, "Helvetica Neue", Arial, sans-serif;
-		font-weight: 300;
 	}
 
 	#footer {
-		position: absolute;
 		top: 100%;
-	}
-
-	#footer * {
-		color: rgb(145, 145, 145);
-		font-size: 9px;
-	}
-
-	#footer a {
-		color: rgb(121, 121, 121)
-	}
-
-	#copyright {
-		width: 300px;
-		padding: 10px 10px 0px 10px;
-	}
-
-	#social_ack {
-		width: 300px;
-		padding: 0px 10px 10px 10px;
 	}
 
 	#social_ack * {
